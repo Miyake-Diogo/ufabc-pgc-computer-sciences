@@ -6,6 +6,7 @@ helm repo update
 
 # Create a Helm release of Loki with Grafana + Prometheus using a PVC
 # NOTE: This diverges from the Loki docs as it uses storageClassName=default instead of "standard" 
+kubectl create namespace grafana
 helm upgrade --install loki grafana/loki-stack --namespace grafana --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false,loki.persistence.enabled=true,loki.persistence.storageClassName=default,loki.persistence.size=5Gi
 
 # The Helm installation uses a non-default password for Grafana.  This command fetches it.

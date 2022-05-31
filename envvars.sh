@@ -4,3 +4,4 @@
 AKS_RG=rg-aks-miyake-pgc
 AKS_LOCATION=eastus
 AKS_NAME=MiyakeClusterPGC
+ACR_NAME=MiyakeACRPGC
