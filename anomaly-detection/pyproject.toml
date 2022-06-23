@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "anomaly-detection"
+version = "0.1.0"
+description = "Anomaly detection model using python and scikit learn"
+authors = ["Diogo Miyake <akio.miyake@live.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.2"
+Faker = "^13.14.0"
+scikit-learn = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
